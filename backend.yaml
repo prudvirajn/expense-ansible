@@ -61,5 +61,3 @@
       target: /app/schema/backend.sql
       name: all
       state: dump
-
-  - name:                      
