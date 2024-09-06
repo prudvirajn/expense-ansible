@@ -52,7 +52,7 @@
       - PyMySQL
       - cryptography
       executable: pip3.9
-          
+
   - name: import mysql data
     community.mysql.mysql_db:
       login_user: root
@@ -60,4 +60,6 @@
       login_host: "{{ login_host }}"
       target: /app/schema/backend.sql
       name: all
-      state: import                     
+      state: dump
+
+  - name:                      
